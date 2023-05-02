@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+form{
+    margin-top: 100px;
+}
+
+
+.form-title {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #be1116;
+    font-family: math;
+}
+
+
+.price-info input {
+    display: block;
+    width: 344px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+
+}
+
+
+.price-info {
+    padding: 70px;
+    border: 8px solid #D5D5C8;
+}
+
+.price-info-button .action-button {
+    width: 368px;
+    padding: 20px 116px;
+}
+
+.action-button {
+    text-transform: uppercase;
+    background-color: #be1116;
+    color: white;
+    border: 1px solid #D5D5C8;
+
+}
+
+
+
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin: 20px auto;
+}
+
+.news{
+    width: 1000px;
+    padding: 11px 19px;
+    border: 1px solid;
+    background: white;
+}
+
+.list__news{
+    width: 980px;
+    padding: 25px 0px;
+    border-top: 1px  dotted #832b5b;
+    border-bottom: 1px dotted #832b5b;
+    list-style-type: none;
+}
+
+.data__news{
+    background:#832b5b;
+    color: white;
+    padding: 5px;
+}
+
+.item__news{
+    margin-bottom: 18px;
+}
+
+.description__news{
+    margin-top: 5px;
+}
+
+.name__news{
+    display: inline-block;
+}

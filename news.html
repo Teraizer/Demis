@@ -1,0 +1,51 @@
+<?php
+include "databaseconnect.php";
+
+$result = mysqli_query($conn,"SELECT * FROM `news`");
+?>
+
+<!Doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>news</title>
+</head>
+<body>
+<div class="container">
+    <div class="news">
+        <h1 class="title">Новости</h1>
+        <ul class="list__news">
+            <?php
+      while($news = mysqli_fetch_assoc($result))
+      {
+        ?>
+            <li>
+                <div class="item__news">
+                    <span class="data__news"><?php echo $news['idate'] ?></span>
+                    <a  href="view.php?id=<?=$news['id']?>"> <?php echo $news['title'] ?></a>
+                    <div class="description__news"><?php echo $news['announce'] ?>
+                    </div>
+                </div>
+            </li>
+            <?php
+    }
+    ?>
+            <li>
+                <div class="item__news">
+                    <span class="data__news">00.00.00</span>
+                    <a href="#" class="name__news">Name</a>
+                    <div class="description__news">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis corporis rerum in tenetur nam eum eius unde ad placeat laboriosam necessitatibus ut, vero inventore vitae cum laborum ullam eos quis?
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+</body>
+</html>
